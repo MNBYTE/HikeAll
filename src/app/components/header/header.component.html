@@ -1,0 +1,183 @@
+  <!-- <nav
+    class="navbar navbar-expand-lg border-0"
+    [ngClass]="{ 'navbar-white': isScrolled }"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">
+        <h1 class="fs-2 smokyBlack" style="font-weight: 780">
+          AllTrails<span class="fs-1 rufous" style="font-weight: 775">.</span>
+        </h1>
+      </a>
+      <div class="btn-group">
+        <button
+          id="smallScreenDonate"
+          class="btn btn-lg rounded-0 text-uppercase bgBeige fw-semibold"
+          routerLink="/Log In"
+          [ngClass]="{ 'nav-links': isScrolled, navLinkColor: !isScrolled }"
+        >
+          <span class="fs-6 align-items-center" style="letter-spacing: 1.40px"
+            >Login.</span
+          >
+        </button>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          (click)="toggleMenu()"
+        >
+          <span
+            class="bi fs-1"
+            [ngClass]="{ 'bi-list': !menuToggle(), 'bi-x-lg': menuToggle() }"
+          ></span>
+        </button>
+      </div>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav text-uppercase fw-semibold">
+          <a
+            class="nav-link mx-3 smooth-scroll"
+            aria-current="page"
+            routerLink="/"
+            [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+            >Home</a
+          >
+          <a
+            class="nav-link mx-3"
+            routerLink="/Explore"
+            [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+            >EXplore</a
+          >
+          <a
+            class="nav-link mx-3 smooth-scroll"
+            routerLink="/Gear"
+            [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+            >Gear</a
+          >
+          <a
+            class="nav-link mx-3 smooth-scroll"
+            routerLink="/Help"
+            [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+            >Help</a>
+          <a
+            class="nav-link mx-3 smooth-scroll"
+            routerLink="/Try AllTrails+"
+            [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+            >AllTrails+</a>
+        </div>
+      </div>
+      <button
+        id="largeScreenDonate"
+        class="btn btn-sm rounded-0 mx-3 text-uppercase bgBeige fw-semibold smooth-scroll"
+        routerLink="/Log In"
+        [ngClass]="{ 'nav-links': isScrolled, navLinkColor: !isScrolled }"
+      >
+        <span class="fs-6 align-items-center" style="letter-spacing: 1px"
+          >Log In </span
+        >
+      </button>
+    </div>
+    <br />
+    <br />
+    <br />
+  </nav> -->
+
+  <nav
+  class="navbar navbar-expand-lg border-0"
+  [ngClass]="{ 'navbar-white': isScrolled }"
+  style="padding: 1.5rem 1rem;" 
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <h1
+        class="fs-5 smokyBlack"
+        style="font-weight: 780; margin: 0;"
+      >
+        HikeAll
+        <span class="fs-6 rufous" style="font-weight: 775">.</span>
+      </h1>
+    </a>
+    <div class="btn-group">
+      <button
+        id="smallScreenDonate"
+        class="btn btn-sm rounded-0 text-uppercase bgBeige fw-semibold"
+        routerLink="/Log In"
+        [ngClass]="{ 'nav-links': isScrolled, navLinkColor: !isScrolled }"
+        style="font-size: 0.8rem; padding: 0.5rem 0.8rem;" 
+      >
+        <span class="align-items-center" style="letter-spacing: 1px">Login.</span>
+      </button>
+      <button
+        class="navbar-toggler border-0 shadow-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="toggleMenu()"
+        style="padding: 0.5rem;"
+      >
+        <span
+          class="bi fs-5" 
+          [ngClass]="{ 'bi-list': !menuToggle(), 'bi-x-lg': menuToggle() }"
+        ></span>
+      </button>
+    </div>
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarNavAltMarkup"
+    >
+      <div class="navbar-nav text-uppercase fw-semibold">
+        <a
+          class="nav-link mx-2 smooth-scroll"
+          aria-current="page"
+          routerLink="/"
+          [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+          style="font-size: 0.9rem; padding: 0.5rem 0;"
+          >Home</a
+        >
+        <a
+          class="nav-link mx-2"
+          routerLink="/Explore"
+          [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+          style="font-size: 0.9rem; padding: 0.5rem 0;"
+          >Explore</a
+        >
+        <a
+          class="nav-link mx-2 smooth-scroll"
+          routerLink="/Gear"
+          [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+          style="font-size: 0.9rem; padding: 0.5rem 0;"
+          >Gear</a
+        >
+        <a
+          class="nav-link mx-2 smooth-scroll"
+          routerLink="/Help"
+          [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+          style="font-size: 0.9rem; padding: 0.5rem 0;"
+          >Help</a>
+        <a
+          class="nav-link mx-2 smooth-scroll"
+          routerLink="/Try AllTrails+"
+          [ngClass]="{ 'nav-links': isScrolled, 'nav-LinkColor': !isScrolled }"
+          style="font-size: 0.9rem; padding: 0.5rem 0;"
+          >HikeAll<sub>+</sub></a>
+      </div>
+    </div>
+    <button
+      id="largeScreenDonate"
+      class="btn btn-sm rounded-0 mx-3 text-uppercase bgBeige fw-semibold smooth-scroll"
+      routerLink="/Log In"
+      [ngClass]="{ 'nav-links': isScrolled, navLinkColor: !isScrolled }"
+      style="font-size: 0.8rem; padding: 0.5rem 0.8rem;"
+    >
+      <span class="align-items-center" style="letter-spacing: 1px">Log In</span>
+    </button>
+  </div>
+</nav>

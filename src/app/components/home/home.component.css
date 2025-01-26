@@ -1,0 +1,119 @@
+:root{
+  --normal-green: #2c5601;
+  --lemon-green-btn: #64f67b;
+  --bg-dark-green: #142800;
+}
+
+.ngreen{
+  color: var(--normal-green);
+}
+
+.lgreenbtn{
+  color: var(--lemon-green-btn);
+}
+
+.bgreen{
+  color: var(--bg-dark-green);
+}
+
+section{
+  padding-bottom: 10px;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h1{
+  font-weight: 500;
+}
+
+/* CSS */
+.button-81 {
+    background-color: #64f67b;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-81:hover {
+    background-color: #999;
+    color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    .button-81 {
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  /* Custom CSS for styling */
+  .container-fluid {
+    padding: 20px;
+}
+
+.background-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style the text on the right */
+.text-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Center-align the text */
+.text-container h1,
+.text-container p {
+  text-align: center;
+}
+
+#column:hover{
+  transform: translateY(-3px);
+}
+
+
+
+
+.diagonal-images-container {
+  position: relative;
+}
+
+.diagonal-image {
+  position: absolute;
+  max-width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image1 {
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  bottom: 0;
+  right: 0;
+}
